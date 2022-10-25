@@ -1,11 +1,13 @@
-/* Imports */
+// lets grab our dom elements
+const nameDisplay = document.getElementById('name');
+console.log('nameDisplay', nameDisplay);
 
-/* Get DOM Elements */
+nameDisplay.textContent = 'Beau';
+nameDisplay.classList.add('green');
 
-/* State */
-
-/* Events */
-
-/* Display Functions */
-
-// (don't forget to call any display functions you want to run on page load!)
+const updateButton = document.getElementById('update-btn');
+updateButton.addEventListener('click', () => {
+    console.log('text');
+    const nameInput = document.getElementById('name-input');
+    nameDisplay.textContent = nameInput.value;
+});
