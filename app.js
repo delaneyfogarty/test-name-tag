@@ -1,11 +1,6 @@
-/* Imports */
+// lets grab our dom elements
+const nameDisplay = document.getElementById('name');
+console.log('nameDisplay', nameDisplay);
 
-/* Get DOM Elements */
-
-/* State */
-
-/* Events */
-
-/* Display Functions */
-
-// (don't forget to call any display functions you want to run on page load!)
+nameDisplay.textContent = 'Beau';
+nameDisplay.classList.add('green');
